@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+html, body, #app {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+@keyframes gradient-wave {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animated {
+  background: linear-gradient(
+    135deg,
+    #0a1628,
+    #0d4d56,
+    #0d9488,
+    #0a1628
+  );
+  background-size: 300% 300%;
+  animation: gradient-wave 20s ease infinite;
+}
+
+.text-overlay {
+  background: rgba(8, 18, 36, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
+}
