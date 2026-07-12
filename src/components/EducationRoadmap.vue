@@ -93,7 +93,7 @@ const nodes = [
         {{ year.label }}
       </button>
     </div>
-    <table class="w-full text-sm">
+    <table class="w-full text-sm p-5">
       <thead><tr class="text-left text-white/60"><th class="pb-2">Module</th><th class="pb-2">Grade</th></tr></thead>
       <tbody>
         <tr v-for="mod in bachelorsYears.find(y => y.id === activeYear)?.modules" :key="mod.name" class="border-t border-white/10">
@@ -102,8 +102,8 @@ const nodes = [
         </tr>
       </tbody>
     </table>
-    <h3 class="font-semibold mb-1">Comments throughout the Experience</h3>
-    <p class="text-white/80 text-sm"> My 3rd year was split in 2 halves 1 part in Ireland and the other I Studied at H_da Darmstadt, Germany. I got exposed to Multitouch which was probably my favourite module in my Bachelors. 
+    <h3 class="font-semibold mb-1 pt-4 ">Comments throughout the Experience</h3>
+    <p class="text-white/80 text-sm "> My 3rd year was split in 2 halves 1 part in Ireland and the other I Studied at H_da Darmstadt, Germany. I got exposed to Multitouch which was probably my favourite module in my Bachelors. 
         For my Final Year Project I create a Website to deal with procrasination with Gameification techniques to encourage the creation of good habits through systems like leaderboards, daily login and achievements.
     </p>
   </Modal>

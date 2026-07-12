@@ -1,16 +1,26 @@
 <script setup lang="ts">
-const jobs = [
-  { role: 'Job Title', company: 'Company Name', dates: '2024 — Present', desc: 'What you did.' },
-]
+import { experience } from '../data/experience'
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto p-8 text-white text-overlay my-6 mx-4 md:mx-auto">
-    <h1 class="text-3xl font-bold mb-6">Experience</h1>
-    <div v-for="job in jobs" :key="job.role" class="mb-6 border-l-2 border-white/30 pl-4">
-      <h2 class="text-lg font-semibold">{{ job.role }} — {{ job.company }}</h2>
-      <p class="text-sm text-white/60">{{ job.dates }}</p>
-      <p class="text-white/80 mt-1">{{ job.desc }}</p>
+  <div class="max-w-2xl mx-auto p-8 text-white">
+    <h1 class="text-3xl font-bold mb-8">Experience</h1>
+
+    <div class="flex flex-col gap-6">
+      <div
+        v-for="job in experience"
+        :key="job.company + job.role"
+        class="border border-white/20 rounded-lg p-5"
+      >
+        <div class="flex flex-wrap justify-between items-baseline gap-2 mb-2">
+          <h2 class="text-lg font-semibold">{{ job.role }}</h2>
+          <span class="text-sm text-white/60">{{ job.dates }}</span>
+        </div>
+        <p class="text-sm text-white/70 mb-3">
+          {{ job.company }}<span v-if="job.location"> · {{ job.location }}</span>
+        </p>
+        <p class="text-white/80 leading-relaxed">{{ job.description }}</p>
+      </div>
     </div>
   </div>
 </template>
