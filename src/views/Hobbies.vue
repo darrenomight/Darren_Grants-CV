@@ -1,6 +1,10 @@
+<script setup lang="ts">
+import HobbiesCarousel from '../components/HobbiesCarousel.vue'
+</script>
+
 <template>
-  <div class="max-w-2xl mx-auto p-8 text-white text-overlay my-6 mx-4 md:mx-auto">
-    <h1 class="text-2xl font-bold">Hobbies</h1>
-    <p>Content coming soon.</p>
+  <div class="w-[80%] mx-auto p-8 text-white">
+    <h1 class="text-3xl font-bold mb-8">Hobbies</h1>
+    <HobbiesCarousel />
   </div>
 </template>

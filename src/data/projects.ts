@@ -64,9 +64,9 @@ export const projects: Project[] = [
   {
     id: 'project5',
     name: 'Audi Spectrum',
-    headline: 'Music Visulatization based on OOP back in Second Year',
+    headline: 'Music Visulatization ',
     paragraphs: [
-      'Audio-reactive visualizer in C with Raylib',
+      'Audio-reactive visualizer in C with Raylib, Also done in java in second year',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     ],
     media: { type: 'image', src: '' },
@@ -76,14 +76,14 @@ export const projects: Project[] = [
 
   {
     id: 'project6',
-    name: 'Gym Track',
-    headline: 'Gym Excercise Tracker',
+    name: 'Automated Daemons in Linux',
+    headline: 'Using Linux and Daemons to manage a manfucatoring and distribution upload of Documents',
     paragraphs: [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     ],
     media: { type: 'image', src: '' },
-    techStack: ['React', 'Next.js', 'TypeScript', 'Tailwind'],
+    techStack: ['Linux - Ubuntu', 'C', 'MakeList',],
     link: '',
   },
 ]
