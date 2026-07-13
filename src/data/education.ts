@@ -23,7 +23,6 @@ export const bachelorsYears: EduYear[] = [
       { name: 'Operating Systems 1', grade: 'B2' },
       { name: 'Algorithm and Design 1', grade: 'B3'  },
       { name: 'Computer Architecture', grade: 'A3'  },
-      { name: 'Module D', grade: 'A1'  },
       { name: 'Software for Global Market 1', grade: 'B3'  },
       { name: 'German 1', grade: 'A3'  },
       { name: 'Program Design', grade: 'B2'  },

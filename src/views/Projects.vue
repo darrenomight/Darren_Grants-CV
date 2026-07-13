@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import ProjectAccordion from '../components/ProjectAccordion.vue'
+import ProjectsTabs from '../components/ProjectTabs.vue'
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto p-8 text-white">
+  <div class="w-[80%] mx-auto p-8 text-white">
     <h1 class="text-3xl font-bold mb-8">Projects</h1>
-    <ProjectAccordion />
+    <ProjectsTabs />
   </div>
 </template>
