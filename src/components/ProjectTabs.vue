@@ -20,7 +20,7 @@ function step(dir: 1 | -1) {
 
 <template>
   <div>
-    <div class="flex overflow-x-auto border border-white/20 rounded-lg mb-6">
+    <div class=" text-overlay flex overflow-x-auto border border-white/20 rounded-lg mb-6">
       <button
         v-for="tab in tabs"
         :key="tab.id"
@@ -33,7 +33,7 @@ function step(dir: 1 | -1) {
     </div>
 
     <Transition name="fade" mode="out-in">
-      <div v-if="activeId === 'tech'" key="tech" class="border border-white/20 rounded-lg p-6">
+      <div v-if="activeId === 'tech'" key="tech" class="border border-white/20 rounded-lg p-6 text-overlay">
         <h2 class="text-xl font-bold mb-4">Tech I work with</h2>
         <ul class="flex flex-wrap gap-2">
           <li v-for="tech in overallTech" :key="tech" class="px-3 py-1 rounded bg-white/10 border border-white/20 text-sm text-white/80">
@@ -43,7 +43,7 @@ function step(dir: 1 | -1) {
       </div>
 
       <div v-else-if="activeProject" :key="activeProject.id" class="flex flex-col md:flex-row gap-6">
-        <div class="flex-1 border border-white/20 rounded-lg p-6">
+        <div class="flex-1 border border-white/20 rounded-lg p-6 text-overlay">
           <h2 class="text-2xl font-bold mb-4">{{ activeProject.headline }}</h2>
           <p v-for="(para, i) in activeProject.paragraphs" :key="i" class="text-white/80 leading-relaxed mb-4">
             {{ para }}
@@ -64,7 +64,7 @@ function step(dir: 1 | -1) {
             Image / video
           </div>
 
-          <div class="border border-white/20 rounded-lg p-4">
+          <div class="border border-white/20 rounded-lg p-4 text-overlay">
             <h3 class="font-semibold mb-3 text-center border-b border-white/10 pb-2">Tech Stack</h3>
             <ul class="space-y-1.5">
               <li v-for="tech in activeProject.techStack" :key="tech" class="text-sm text-white/70">• {{ tech }}</li>

@@ -16,60 +16,61 @@ const nodes = [
 
 <template>
   <!-- Mobile: simple stacked list -->
-  <div class="md:hidden flex flex-col gap-4">
+  <div class="md:hidden flex flex-col gap-4 mt-6">
     <button
       v-for="node in nodes"
       :key="node.id"
-      class="border border-white/20 rounded-lg p-4 text-left hover:bg-white/10"
+      class="text-overlay border border-white/20 rounded-lg p-5 text-left hover:bg-white/10"
       @click="openModal = node.id"
     >
-      <p class="font-semibold">{{ node.label }}</p>
-      <p class="text-sm text-white/60">{{ node.subtitle }}</p>
+      <p class="font-semibold text-base">{{ node.label }}</p>
+      <p class="text-sm text-white/60 mt-1">{{ node.subtitle }}</p>
     </button>
   </div>
 
   <!-- Desktop: roadmap -->
-  <div class="hidden md:block relative w-full h-[500px]">
-    <svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" stroke="white" stroke-opacity="0.3">
-      <line x1="150" y1="80" x2="450" y2="80" />
-      <line x1="450" y1="80" x2="450" y2="220" />
-      <line x1="450" y1="220" x2="250" y2="220" />
-      <line x1="250" y1="220" x2="250" y2="360" />
-      <line x1="250" y1="360" x2="450" y2="360" />
+  <div class="hidden md:block relative w-full h-[540px] mt-6">
+    <svg class="absolute inset-0 w-full h-full pointer-events-none" fill="none" stroke="white" stroke-opacity="0.3" stroke-width="1.5">
+      <line x1="175" y1="90" x2="420" y2="90" />
+      <line x1="420" y1="90" x2="420" y2="240" />
+      <line x1="420" y1="240" x2="240" y2="240" />
+      <line x1="240" y1="240" x2="240" y2="390" />
+      <line x1="240" y1="390" x2="420" y2="390" />
     </svg>
 
     <button
-      class="absolute top-[55px] left-[50px] w-48 border border-white/30 rounded-lg bg-white/10 p-3 text-left hover:bg-white/20 transition"
+      class="absolute top-[50px] left-[30px] w-60 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
       @click="openModal = 'leaving-cert'"
     >
-      <p class="font-semibold">Leaving Cert</p>
-      <p class="text-xs text-white/60">Secondary Education </p>
-      <p class="text-xs text-white/60">446 Points Leaving Cert </p>
-      
+      <p class="font-semibold text-base">Leaving Cert</p>
+      <p class="text-sm text-white/60 mt-1">Secondary Education</p>
+      <p class="text-sm text-white/60">446 Points</p>
     </button>
 
     <button
-      class="absolute top-[55px] left-[400px] w-52 border border-white/30 rounded-lg bg-white/10 p-3 text-left hover:bg-white/20 transition"
+      class="absolute top-[50px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
       @click="openModal = 'bachelors'"
     >
-      <p class="font-semibold">Bachelors</p>
-      <p class="text-xs text-white/60">Computer Science International - TU Dublin 2:1</p>
+      <p class="font-semibold text-base">Bachelors</p>
+      <p class="text-sm text-white/60 mt-1">Computer Science International</p>
+      <p class="text-sm text-white/60">TU Dublin — 2:1</p>
     </button>
 
     <button
-      class="absolute top-[195px] left-[200px] w-52 border border-white/30 rounded-lg bg-white/10 p-3 text-left hover:bg-white/20 transition"
+      class="absolute top-[200px] left-[170px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
       @click="openModal = 'masters'"
     >
-      <p class="font-semibold">Masters</p>
-      <p class="text-xs text-white/60">Adv. Software Development - TU Dublin (In progress 1:1 Track)</p>
+      <p class="font-semibold text-base">Masters</p>
+      <p class="text-sm text-white/60 mt-1">Adv. Software Development</p>
+      <p class="text-sm text-white/60">TU Dublin — In Progress (1:1 Track)</p>
     </button>
 
     <button
-      class="absolute top-[335px] left-[400px] w-52 border border-white/30 rounded-lg bg-white/10 p-3 text-left hover:bg-white/20 transition"
+      class="absolute top-[355px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
       @click="openModal = 'courses'"
     >
-      <p class="font-semibold">Courses / Certs</p>
-      <p class="text-xs text-white/60">Security, AWS, and more</p>
+      <p class="font-semibold text-base">Courses / Certs</p>
+      <p class="text-sm text-white/60 mt-1">Security, AWS, and more</p>
     </button>
   </div>
 

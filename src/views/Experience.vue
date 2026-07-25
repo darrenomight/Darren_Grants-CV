@@ -3,7 +3,7 @@ import { experience } from '../data/experience'
 </script>
 
 <template>
-  <div class="max-w-2xl mx-auto p-8 text-white">
+  <div class="max-w-2xl mx-auto p-8 text-white text-overlay my-6 mx-4 md:mx-auto">
     <h1 class="text-3xl font-bold mb-8">Experience</h1>
 
     <div class="flex flex-col gap-6">
