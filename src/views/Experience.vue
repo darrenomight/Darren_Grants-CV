@@ -19,7 +19,7 @@ import { experience } from '../data/experience'
         <p class="text-sm text-white/70 mb-3">
           {{ job.company }}<span v-if="job.location"> · {{ job.location }}</span>
         </p>
-        <p class="text-white/80 leading-relaxed">{{ job.description }}</p>
+        <p v-for="(para, i) in job.description" :key="i" class="text-white/80 leading-relaxed" :class="i > 0 ? 'mt-3' : ''">{{ para }}</p>
       </div>
     </div>
   </div>

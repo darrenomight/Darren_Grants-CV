@@ -33,7 +33,7 @@ function cardStyle(i: number) {
 
   const percentX = d * 42
   const extraPx = d * 60
-  const scale = 1 - abs * 0.1
+  const scale = 1 - abs * 0.15
   const rotateY = Math.max(-28, Math.min(28, d * -14))
   const opacity = abs === 0 ? 1 : Math.max(0.25, 1 - abs * 0.28)
 
@@ -51,10 +51,10 @@ function cardStyle(i: number) {
     <div class="w-full">
         <div class="relative w-full h-[620px] md:h-[540px]" style="perspective: 1200px;">
             <div class="absolute inset-0 flex items-center justify-center">
-                <div v-for="(hobby, i) in hobbies" :key="hobby.id" class="absolute w-64 h-[22rem] md:w-80 md:h-[30rem] rounded-xl border border-white/20 bg-white/10
+                <div v-for="(hobby, i) in hobbies" :key="hobby.id" class="absolute w-79 h-[25rem] md:w-80 md:h-[35rem] rounded-xl border border-white/20 bg-white/10
              backdrop-blur-sm p-5 cursor-pointer transition-all duration-[400ms] ease-out
              flex flex-col" :style="cardStyle(i)" @click="goTo(i)">
-                    <div class="w-full h-32 md:h-44 rounded-lg bg-white/10 border border-white/10 flex-shrink-0
+                    <div class="w-full h-35 md:h-50 rounded-lg bg-white/10 border border-white/10 flex-shrink-0
                   flex items-center justify-center text-white/30 text-xs mb-3 overflow-hidden">
                         <img v-if="hobby.image" :src="hobby.image" :alt="hobby.name"
                             class="w-full h-full object-cover" />
