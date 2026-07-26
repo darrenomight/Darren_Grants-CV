@@ -6,10 +6,10 @@ defineEmits<{ close: [] }>()
 <template>
   <div
     v-if="open"
-    class="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+    class="fixed inset-0 bg-black/50 flex items-center justify-center z-100 p-4"
     @click.self="$emit('close')"
   >
-    <div class="bg-emerald-900 border border-white/20 rounded-lg p-6 max-w-sm w-full text-white relative">
+    <div class="text-overlay border border-white/20 rounded-lg p-6 max-w-lg w-full text-white relative">
       <button
         class="absolute top-3 right-3 text-white/60 hover:text-white"
         @click="$emit('close')"

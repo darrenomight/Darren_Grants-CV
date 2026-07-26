@@ -30,7 +30,7 @@ const sections = [
   },
 ]
 
-const lastUpdated = '10/07/2026'
+const lastUpdated = '01/08/2026'
 </script>
 
 <template>

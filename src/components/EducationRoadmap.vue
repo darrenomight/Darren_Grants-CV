@@ -20,7 +20,7 @@ const nodes = [
     <button
       v-for="node in nodes"
       :key="node.id"
-      class="text-overlay border border-white/20 rounded-lg p-5 text-left hover:bg-white/10"
+      class="text-overlay border border-white/20 rounded-lg p-5 text-left hover:border-white/60 hover:scale-[1.02] transition-all duration-200 cursor-pointer"
       @click="openModal = node.id"
     >
       <p class="font-semibold text-base">{{ node.label }}</p>
@@ -39,7 +39,7 @@ const nodes = [
     </svg>
 
     <button
-      class="absolute top-[50px] left-[30px] w-60 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
+      class="absolute top-[50px] left-[30px] w-60 text-overlay border border-white/30 rounded-lg p-5 text-left hover:border-white/60 hover:scale-[1.02] transition-all duration-200"
       @click="openModal = 'leaving-cert'"
     >
       <p class="font-semibold text-base">Leaving Cert</p>
@@ -48,7 +48,7 @@ const nodes = [
     </button>
 
     <button
-      class="absolute top-[50px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
+      class="absolute top-[50px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:border-white/60 hover:scale-[1.02] transition-all duration-200"
       @click="openModal = 'bachelors'"
     >
       <p class="font-semibold text-base">Bachelors</p>
@@ -57,7 +57,7 @@ const nodes = [
     </button>
 
     <button
-      class="absolute top-[200px] left-[170px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
+      class="absolute top-[200px] left-[170px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:border-white/60 hover:scale-[1.02] transition-all duration-200"
       @click="openModal = 'masters'"
     >
       <p class="font-semibold text-base">Masters</p>
@@ -66,7 +66,7 @@ const nodes = [
     </button>
 
     <button
-      class="absolute top-[355px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:bg-white/10 transition"
+      class="absolute top-[355px] left-[370px] w-64 text-overlay border border-white/30 rounded-lg p-5 text-left hover:border-white/60 hover:scale-[1.02] transition-all duration-200"
       @click="openModal = 'courses'"
     >
       <p class="font-semibold text-base">Courses / Certs</p>

@@ -14,7 +14,7 @@ const contactOpen = ref(false)
     <Header @open-contact="contactOpen = true" />
 
     <div v-if="route.name === 'landing'" class="text-center mt-10 px-4">
-      <h1 class="text-3xl font-bold text-white">Welcome To Darren Grants Website</h1>
+      <h1 class="text-3xl font-bold text-white">Welcome To Darren Grants' Website</h1>
       <p class="text-white/70 mt-1">Software Engineer - Cloud Fascinated - Programmer </p>
     </div>
 

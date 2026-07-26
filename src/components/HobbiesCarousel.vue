@@ -48,20 +48,20 @@ function cardStyle(i: number) {
 </script>
 
 <template>
-    <div class="w-full">
-        <div class="relative w-full h-[620px] md:h-[540px]" style="perspective: 1200px;">
+    <div class="w-full overflow-hidden">
+        <div class="relative w-full h-[580px]" style="perspective: 1200px;">
             <div class="absolute inset-0 flex items-center justify-center">
-                <div v-for="(hobby, i) in hobbies" :key="hobby.id" class="absolute w-79 h-[25rem] md:w-80 md:h-[35rem] rounded-xl border border-white/20 bg-white/10
+                <div v-for="(hobby, i) in hobbies" :key="hobby.id" class="absolute w-80 h-[33rem] rounded-xl border border-white/20 bg-white/10
              backdrop-blur-sm p-5 cursor-pointer transition-all duration-[400ms] ease-out
-             flex flex-col" :style="cardStyle(i)" @click="goTo(i)">
-                    <div class="w-full h-35 md:h-50 rounded-lg bg-white/10 border border-white/10 flex-shrink-0
+             flex flex-col overflow-hidden" :style="cardStyle(i)" @click="goTo(i)">
+                    <div class="w-full h-50 rounded-lg bg-white/10 border border-white/10 flex-shrink-0
                   flex items-center justify-center text-white/30 text-xs mb-3 overflow-hidden">
                         <img v-if="hobby.image" :src="hobby.image" :alt="hobby.name"
                             class="w-full h-full object-cover" />
                         <span v-else>Image</span>
                     </div>
-                    <h3 class="text-white font-semibold text-center mb-2 text-base md:text-lg">{{ hobby.name }}</h3>
-                    <p v-if="diff(i) === 0" class="text-white/70 text-sm leading-relaxed">
+                    <h3 class="text-white font-semibold text-center mb-2 text-lg">{{ hobby.name }}</h3>
+                    <p v-if="diff(i) === 0" class="text-white/70 text-sm leading-relaxed flex-1 overflow-y-auto">
                         {{ hobby.description }}
                     </p>
                 </div>
