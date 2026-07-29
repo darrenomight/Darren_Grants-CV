@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Landing from '../views/Landing.vue'
 import About from '../views/About.vue'
 import Experience from '../views/Experience.vue'
 import Projects from '../views/Projects.vue'
@@ -11,8 +10,8 @@ import Education from '../views/Education.vue'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'landing', component: Landing },
-    { path: '/about', name: 'about', component: About },
+    { path: '/', name: 'about', component: About },
+    { path: '/about', redirect: '/' },
     { path: '/experience', name: 'experience', component: Experience },
     { path: '/projects', name: 'projects', component: Projects },
     { path: '/hobbies', name: 'hobbies', component: Hobbies },
