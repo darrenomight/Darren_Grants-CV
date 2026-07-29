@@ -3,7 +3,7 @@ import gym from '../assets/hobbies/gym.png'
 import running from '../assets/hobbies/strava.jpg'
 import warhammer from '../assets/hobbies/wh1.png'
 import chess from '../assets/hobbies/chess.png'
-import ukulele from '../assets/hobbies/Uke.jpg'
+import ukulele from '../assets/hobbies/uke.jpg'
 import hs from '../assets/hobbies/hl.png'
 
 
