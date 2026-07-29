@@ -1,5 +1,4 @@
 import gymTrack from '../assets/projects/images/GymTrack.png'
-import gg from '../assets/projects/images/gg.png'
 import gg2 from '../assets/projects/images/gg2.png'
 import mon from '../assets/projects/images/mon.png'
 import moby from '../assets/projects/images/mobyduck.png'
