@@ -49,7 +49,7 @@ function step(dir: 1 | -1) {
             {{ para }}
           </p>
           <a v-if="activeProject.link" :href="activeProject.link" target="_blank" class="text-sm underline text-white/80 hover:text-white">
-            View project →
+            You can see it live here →
           </a>
         </div>
 
