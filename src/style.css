@@ -27,9 +27,8 @@ body {
 }
 
 .text-overlay {
-  background: rgba(8, 18, 36, 0.45);
+  background: rgba(8, 18, 36, 0.72);
   backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   border-radius: 0.75rem;
 }
 
